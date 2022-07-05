@@ -1,0 +1,316 @@
+/* *********************** MAIN CSS **************************  */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+:root {
+    --primary-color: #11b7b1;
+    --all-transition: all .5s ease;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.top_header {
+    height: 112px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.col4 {
+    width: 33.33%;
+    float: left;
+}
+
+.col4 img.logo {
+    margin-top: 32px;
+    border-radius: 10px;
+}
+
+.main_nav {
+    margin-top: 50px;
+}
+
+.main_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main_nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main_nav ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.main_nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: var(--all-transition);
+}
+
+.main_nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social_links {
+    margin-top: 40px;
+    list-style: none;
+    float: right;
+}
+
+.social_links li {
+    display: inline-block;
+}
+
+.social_links li a {
+    text-decoration: none;
+}
+
+.social_links li i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    font-style: normal;
+    color: #fff;
+}
+
+.social_links li:nth-child(1) i {
+    background-color: #395998;
+    transition: var(--all-transition);
+}
+
+.social_links li:nth-child(1) i:hover {
+    background-color: #fff;
+    color: #395998;
+}
+
+.social_links li:nth-child(2) i {
+    background-color: #00eced;
+    transition: var(--all-transition);
+}
+
+.social_links li:nth-child(2) i:hover {
+    background-color: #fff;
+    color: #00eced;
+}
+
+.social_links li:nth-child(3) i {
+    background-color: #f00;
+    transition: var(--all-transition);
+}
+
+.social_links li:nth-child(3) i:hover {
+    background-color: #fff;
+    color: #f00;
+}
+
+#main_area {
+    background: url(https://picsum.photos/id/317/1600/700);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 620px;
+    padding-top: 225px;
+    text-align: center;
+}
+
+#main_area h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    margin-top: 0;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 100px;
+}
+
+#main_area h1 span {
+    color: var(--primary-color);
+}
+
+#main_area p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+
+#main_area i {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-style: normal;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    transition: var(--all-transition);
+}
+
+#main_area i:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+#whatwedo {
+    background-color: var(--primary-color);
+    text-align: center;
+    overflow: hidden;
+    padding-top: 56px;
+    padding-bottom: 112px;
+}
+
+#whatwedo h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#whatwedo .col6 {
+    width: 50%;
+    min-height: 250px;
+    float: left;
+    background-image: url(https://picsum.photos/id/73/500/250);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .70;
+    cursor: pointer;
+    transition: var(--all-transition);
+}
+
+#whatwedo .col6:hover {
+    opacity: 1;
+}
+
+#whatwedo h3 {
+    padding-top: 60px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#whatwedo p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#whatwedo h3,
+#whatwedo p {
+    color: #fff;
+}
+
+#testimonials {
+    background: url(https://picsum.photos/id/122/1400/500);
+    background-size: cover;
+    background-position: center;
+    min-height: 422px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#testimonials p {
+    padding-top: 120px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+#testimonials h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#testimonials h4 span {
+    color: var(--primary-color);
+}
+
+#testimonials i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#testimonials i.active-circle {
+    background-color: #fff;
+}
+
+#clients {
+    background-color: #f4f4f4;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#clients h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#clients .col2 {
+    width: 20%;
+    float: left;
+}
+
+#clients .col2 img {
+    border: 1px dotted var(--primary-color);
+    outline: none;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 30%;
+    transition: var(--all-transition);
+}
+
+#clients .col2 img:hover {
+    opacity: 1;
+    border: 1px dashed #f00;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: var(--primary-color);
+    overflow: hidden;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+footer img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
